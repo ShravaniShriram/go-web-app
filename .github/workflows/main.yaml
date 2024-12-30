@@ -45,11 +45,8 @@ jobs:
         version: v1.56.2
         install-mode: binary  # Binary install method (can also use 'go' or 'source')
         github-token: ${{ secrets.TOKEN }}  # Token for authentication (if needed)
-        only-new-issues: false  # Set to 'true' to only report new issues
-        skip-cache: false  # Skip cache if needed
-        skip-save-cache: false  # Skip saving cache if needed
-        problem-matchers: false  # Set to 'true' if using problem matchers for error reporting
-        cache-invalidation-interval: 7 
+        only-new-issues: true
+         
   
   push:
     runs-on: ubuntu-latest
